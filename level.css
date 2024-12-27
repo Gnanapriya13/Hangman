@@ -1,0 +1,211 @@
+body{
+    background-color: black;
+    font-family: 'Creepster', cursive;
+    
+}
+
+#ok{
+    background-color: red;
+    font-size: 1.5em;
+    border-radius: 6px;
+    color: aliceblue;
+    margin: auto;
+   cursor:pointer;
+}
+#page1{
+    height: auto;
+    width:600px;
+    background-color: rgb(245, 252, 250);
+    margin:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(100px);
+    animation-name: slideleft;
+    animation-duration: 2s;
+    font-size: 1.5em;
+}
+@keyframes slideleft{
+    from{transform: translate(100%,100%);}
+    to{transform: translate();}
+}
+#container{
+    color:rgb(19, 19, 19);
+    height: auto;
+    width:500px;
+    background-color: rgb(245, 252, 250);
+    margin:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 15px 0px rgb(245, 222, 182);
+    display:none;
+    /* position: relative;
+    transform: translate(-200px,200px); */
+    /* transform: translateX(-100px); */
+
+}
+#outter{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(150px);
+    animation: fadeIn 2s ease-out;
+
+}
+#mes{
+    animation: fadeIn 4s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.buttons{
+    background-color: rgb(231, 220, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3px 3px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 10px auto;
+    gap: 3px;
+}
+#mes{
+    color:brown;
+    font-size:2em;
+}
+#question{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translate(-50px,100px);
+}
+#answer{
+    font-size: 2em;
+}
+#submit{
+    border-radius: 5px;
+    margin:auto;
+    width:fit-content;
+    font-size: 1em;
+}
+label{
+    font-size: 2em;
+}
+#sorry{
+    color:red;
+    font-size: 3em;
+}
+#playagain{
+    background-color: rgb(23, 22, 22);
+    font-size: 3em;
+    border-radius: 15px;
+    color: aliceblue;
+    margin: auto;
+    font-family: 'Creepster', cursive;
+    cursor:pointer;
+}
+#playagain:hover{
+    background-color: rgb(110, 63, 63);
+}
+#home{
+    background-color: rgb(23, 22, 22);
+    font-size: 3em;
+    border-radius: 15px;
+    color: aliceblue;
+    margin: auto;
+    font-family: 'Creepster', cursive;
+    cursor:pointer;
+}
+#home:hover{
+    background-color: rgb(110, 63, 63);
+}
+img{
+    width:400px;
+    height:300px;
+    transform: translateY(15px);
+}
+#images{
+    width:430px;
+    height:330px;
+    background-color: rgb(183, 236, 130);
+    display:none;
+    align-content: center;
+    justify-content: center;
+    
+}
+#image1{
+    display:none;
+    animation: fadeIn 4s ease-out;
+}
+#image2{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image3{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image4{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image5{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image6{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image7{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image8{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+#image9{
+    display:none;
+    animation: fadeIn 2s ease-out;
+}
+@media(max-width:500px){
+    #page1{
+        font-size: 1em;
+        width:330px;
+        transform: translateY(150px);
+    }
+    #container{
+        width:300px;
+        height: 280px;
+        padding-bottom:3px;
+        font-size: 0.75em;
+    }
+    #question{
+        flex-direction:column;
+        transform: translate(0px,40px);
+        gap:15px;
+    }
+    img{
+        width:250px;
+        height:230px;
+        transform: translateY(20px);
+    }
+    #images{
+        width:300px;
+        height:280px;
+        transform: translateX(40px);
+    }
+    #outter{
+        font-size: 0.7em;
+        transform: translateY(200px);
+    }
+   
+}

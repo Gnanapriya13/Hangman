@@ -1,0 +1,94 @@
+body {
+    font-family: 'Creepster', cursive;
+    background-color: rgb(18, 17, 17);
+    color: red;
+    text-align: center;
+    font-size: 4em;
+    padding: 50px;
+    box-sizing: border-box;
+    transform: translateY(-20px);
+    animation-name: backgroundcolor;
+    animation-duration: 4s;
+}
+@keyframes backgroundcolor{
+    0%{background-color: whitesmoke;
+    color:rgb(2, 2, 2)}
+    20%{background-color: rgba(0, 0, 0, 0.438);
+        color: red;}
+    30%{background-color:  whitesmoke;
+        color:rgb(0, 0, 0)}
+    50%{background-color: rgba(1, 1, 1, 0.438);
+        color: red;}
+    60%{background-color:  whitesmoke;
+        color:rgb(0, 0, 0)}
+    80%{background-color: rgba(0, 0, 0, 0.438);
+        color: red;}
+    90%{background-color:  whitesmoke;
+        color:rgb(0, 0, 0)}
+    100%{background-color: rgba(0, 0, 0, 0.438);
+        color: red;}
+}
+h1{
+    text-shadow: 5px 5px 15px  rgb(177, 122, 122);
+    text-align: center;
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    letter-spacing: 10px;
+   
+}
+@keyframes grow{
+    50%{transform:scale(1.5,1.2)};
+}
+
+.level {
+    background-color: rgb(231, 220, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 6px 6px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 10px auto;
+    gap: 10px;
+    margin-top: -50px;
+    animation-name: fade;
+    animation-duration: 4s;
+    transform: translateX(-20px);
+}
+@keyframes fade{
+    0%{opacity:0}
+    50%{opacity:0}
+    100%{opacity:1}
+}
+
+button {
+    background-color: tomato;
+    font-size: 1em; 
+    display: inline-flex; 
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    text-decoration: none;
+    border: none; 
+    cursor: pointer; 
+    font-family: 'Creepster', cursive;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgb(85, 6, 6);
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.7);
+    transform: scaleX(1.04);
+}
+@media (max-width:500px){
+    body{
+        font-size: 2em;
+        transform: translateY(50px);
+    }
+    .level{
+        margin-top: 5px;
+        flex-direction: column;
+        transform: translateX(0px);
+        
+    }
+}
